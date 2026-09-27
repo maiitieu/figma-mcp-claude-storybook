@@ -24,3 +24,13 @@ Figma account mai.t.tieu@ has a Full seat. A sync costs about 3 calls (metadata,
 ## Baseline accessibility finding (27 Sept)
 All 4 variants fail WCAG AA contrast for 16px text: Success 2.44:1, Warning 1.63:1, Fail 3.75:1, Default 3.74:1.
 Fix: add darker `*-text` tokens (e.g. success-70) in Figma, then sync.
+
+## Sync log
+### Sync 1 (27 Sept 2026)
+| Change | Figma | Code: old → new |
+|---|---|---|
+| Toast horizontal padding | `px-16 py-8` | `--toast-padding: 8px` → `8px 16px` |
+| Warning text, icon and bar colour | `#8A5A00` (**hard-coded fill, not bound to a variable**) | `--colour-function-warning` (#FFB800) → new `--toast-warning-fg: #8a5a00` |
+
+Accessibility: Warning contrast rose from **1.63:1 to 5.57:1** (passes AA). Success (2.44), Fail (3.75) and Default (3.74) still fail.
+Design-system flag: the warning colour is now detached from `Function/color.warning`. Either update the variable or add a `Function/color.warning.text` token in Figma, then re-sync.

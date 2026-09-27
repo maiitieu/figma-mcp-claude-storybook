@@ -56,11 +56,13 @@
 
   /* ── Component: toast-notification (Figma node 1:838) ── */
   --toast-height: 65px;
-  --toast-padding: 8px;
+  --toast-padding: 8px 16px;              /* Figma sync 27 Sept: was 8px all round */
   --toast-gap: 10px;
   --toast-radius: 12px;
   --toast-bar-width: 7px;
   --toast-bar-radius: 6px;
   --toast-icon-size: 24px;
   --toast-content-padding-end: 16px;
+  /* Figma sync 27 Sept: warning fg is a hard-coded fill in Figma, not bound to Function/color.warning */
+  --toast-warning-fg: #8a5a00;
 }

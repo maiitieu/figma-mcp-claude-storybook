@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 .toast--fail { --toast-fg: var(--colour-function-error); --toast-bg: var(--colour-function-error-10); }
-.toast--warning { --toast-fg: var(--colour-function-warning); --toast-bg: var(--colour-function-warning-10); }
+.toast--warning { --toast-fg: var(--toast-warning-fg); --toast-bg: var(--colour-function-warning-10); }
 .toast--default { --toast-fg: var(--colour-function-info); --toast-bg: var(--colour-function-info-10); }
 
 .toast__bar {
