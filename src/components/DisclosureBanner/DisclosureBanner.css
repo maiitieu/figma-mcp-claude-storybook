@@ -1,0 +1,18 @@
+.disclosure-banner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--disclosure-banner-gap);
+  padding: var(--disclosure-banner-padding);
+  border-radius: var(--disclosure-banner-radius);
+  border-left: var(--disclosure-banner-border-width) solid var(--colour-border-info);
+  background: var(--colour-surface-info);
+  color: var(--colour-text-primary);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  max-width: 640px;
+}
+.disclosure-banner--warning { background: var(--colour-surface-warning); border-left-color: var(--colour-border-warning); }
+.disclosure-banner--risk { background: var(--colour-surface-risk); border-left-color: var(--colour-border-risk); }
+.disclosure-banner__title { margin: 0; font-size: var(--disclosure-banner-title-size); font-weight: 600; }
+.disclosure-banner__body { margin: 0; font-size: var(--disclosure-banner-body-size); line-height: 1.5; color: var(--colour-text-secondary); }
+.disclosure-banner__link { font-size: var(--disclosure-banner-body-size); color: var(--colour-text-primary); font-weight: 600; }
+.disclosure-banner__link:focus-visible { outline: 2px solid var(--colour-text-primary); outline-offset: 2px; }

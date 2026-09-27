@@ -1,0 +1,66 @@
+/*
+ * Design tokens — primitive → semantic → component.
+ * SOURCE OF TRUTH: Figma variables. Synced by Claude via Figma MCP (get_variable_defs).
+ * Do not hand-edit values without updating Figma; see SYNC.md.
+ */
+:root {
+  /* ── Primitive ─────────────────────────────── */
+  --primitive-colour-navy-900: #0b1f3a;
+  --primitive-colour-navy-50: #eef2f8;
+  --primitive-colour-amber-600: #b45309;
+  --primitive-colour-amber-50: #fff7e6;
+  --primitive-colour-red-700: #b42318;
+  --primitive-colour-red-50: #fef3f2;
+  --primitive-colour-grey-700: #344054;
+  --primitive-colour-white: #ffffff;
+  --primitive-space-2: 8px;
+  --primitive-space-3: 12px;
+  --primitive-space-4: 16px;
+  --primitive-radius-md: 8px;
+  --primitive-font-size-sm: 14px;
+  --primitive-font-size-md: 16px;
+
+  /* ── Semantic ──────────────────────────────── */
+  --colour-text-primary: var(--primitive-colour-navy-900);
+  --colour-text-secondary: var(--primitive-colour-grey-700);
+  --colour-surface-info: var(--primitive-colour-navy-50);
+  --colour-border-info: var(--primitive-colour-navy-900);
+  --colour-surface-warning: var(--primitive-colour-amber-50);
+  --colour-border-warning: var(--primitive-colour-amber-600);
+  --colour-surface-risk: var(--primitive-colour-red-50);
+  --colour-border-risk: var(--primitive-colour-red-700);
+
+  /* ── Component: disclosure-banner ──────────── */
+  --disclosure-banner-padding: var(--primitive-space-4);
+  --disclosure-banner-gap: var(--primitive-space-3);
+  --disclosure-banner-radius: var(--primitive-radius-md);
+  --disclosure-banner-border-width: 4px;
+  --disclosure-banner-title-size: var(--primitive-font-size-md);
+  --disclosure-banner-body-size: var(--primitive-font-size-sm);
+  /* ── Figma: Function colours (synced from Figma variables, file u3AgRYe4MxAIutmfGzHJGy) ── */
+  --colour-function-success: #00b0a6;     /* Function/color.success */
+  --colour-function-success-10: #e6f7f6;  /* Function/color.success.10 */
+  --colour-function-error: #f5004a;       /* Function/color.error */
+  --colour-function-error-10: #feeeef;    /* Function/color.error.10 */
+  --colour-function-warning: #ffb800;     /* Function/color.warning */
+  --colour-function-warning-10: #fff7ea;  /* Function/color.warning.10 */
+  --colour-function-info: #007cee;        /* Function/color.info */
+  --colour-function-info-10: #ebf6ff;     /* Function/color.info.10 */
+  --colour-brand-primary-100: #7b61ff;    /* your-brand-primary-100 */
+
+  /* ── Figma: typography.body-base ── */
+  --typography-body-base-family: 'Inter', system-ui, sans-serif;
+  --typography-body-base-size: 16px;
+  --typography-body-base-weight: 400;
+  --typography-body-base-line-height: 22px;
+
+  /* ── Component: toast-notification (Figma node 1:838) ── */
+  --toast-height: 65px;
+  --toast-padding: 8px;
+  --toast-gap: 10px;
+  --toast-radius: 12px;
+  --toast-bar-width: 7px;
+  --toast-bar-radius: 6px;
+  --toast-icon-size: 24px;
+  --toast-content-padding-end: 16px;
+}
